@@ -1,6 +1,10 @@
 # uema-engenhariadecomputacao
 Slides de aulas do Curso de Engenharia de Computação - Disciplina Teleinformática
 
+## Aula 01 - Redes de Computadores 
+
+<a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/01-redesdecomputadores/" target="_blank">Slides</a>
+
 ## Howto Slides on Reveal.js
 
 Ref: https://medium.com/@marcus_baw/using-reveal-js-a74b30e4065b
