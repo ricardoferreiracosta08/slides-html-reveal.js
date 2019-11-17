@@ -8,5 +8,5 @@ Slides de aulas do Curso de Engenharia de Computação - Disciplina Teleinformá
 - Start adding content to your slides. The Reveal.js documentation is very simple, and very helpful. I won’t duplicate it here.
 - Make local commits (eg git commit -am "my commit message") as required. Usually I just work in the master branch, and make commits irresponsibly infrequently. So sue me.
 - Push to GitHub
-In the GitHub settings for that repo, you need to enable GitHub Pages and select the master branch.
+- In the GitHub settings for that repo, you need to enable GitHub Pages and select the master branch.
 - A few minutes later (there’s always a slight lag for the first time page build) your reveal.js presentation is up at http://[yourusername].github.io/[reponame]
