@@ -1,19 +1,30 @@
-# uema-engenhariadecomputacao
-Slides de aulas do Curso de Engenharia de Computação - Disciplina Teleinformática
+# Edital n. º 163/2019 - PROG/UEMA
 
-## Aula 01 - Redes de Computadores 
+Processo Seletivo Simplificado para professor SUBSTITUTO do Centro de Ciências Tecnológicas.
+Curso de Engenharia de Computação.
+Área/Subárea: Ciências  da  Computação/Teleinformática 
+
+# Slides de aulas
+
+## Professor Ricardo Ferreira Costa
+
+### Aula 01 - Redes de Computadores 
 
 <a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/01-redesdecomputadores/" target="_blank">Slides</a>
 
-## Howto Slides on Reveal.js
+### Aula 02 - Roteamento e switching 
 
-Ref: https://medium.com/@marcus_baw/using-reveal-js-a74b30e4065b
+<a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/02-roteamentoswitching/" target="_blank">Slides</a>
 
-- create a new GitHub repo with the name you want the presentation to be known as (other online Git-integrated source control platforms are available)
-- git clone this repo to a suitable local directory, which should create a subdirectory of the same name as your presentation.
-- git clone https://github.com/hakimel/reveal.js.git
-- Start adding content to your slides. The Reveal.js documentation is very simple, and very helpful. I won’t duplicate it here.
-- Make local commits (eg git commit -am "my commit message") as required. Usually I just work in the master branch, and make commits irresponsibly infrequently. So sue me.
-- Push to GitHub
-- In the GitHub settings for that repo, you need to enable GitHub Pages and select the master branch.
-- A few minutes later (there’s always a slight lag for the first time page build) your reveal.js presentation is up at http://[yourusername].github.io/[reponame]
+### Aula 03 - Redes escalonáveis
+
+<a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/03-redesescalonaveis/" target="_blank">Slides</a>
+
+### Aula 04 - Interconexões de redes 
+
+<a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/04-interredes/" target="_blank">Slides</a>
+
+### Aula 05 - Redes WAN
+
+<a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/05-redeswan/" target="_blank">Slides</a>
+
