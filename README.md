@@ -1,12 +1,14 @@
-# Edital n. º 163/2019 - PROG/UEMA
+# Ricardo Ferreira Costa
 
-Processo Seletivo Simplificado para professor SUBSTITUTO do Centro de Ciências Tecnológicas.
+Processo Seletivo Simplificado para PROFESSOR SUBSTITUTO do Centro de Ciências Tecnológicas.
+
 Curso de Engenharia de Computação.
+
 Área/Subárea: Ciências  da  Computação/Teleinformática 
 
 # Slides de aulas
 
-## Professor Ricardo Ferreira Costa
+## Edital n. º 163/2019 - PROG/UEMA
 
 ### Aula 01 - Redes de Computadores 
 
