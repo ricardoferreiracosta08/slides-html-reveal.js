@@ -10,3 +10,7 @@ Ref: https://medium.com/@marcus_baw/using-reveal-js-a74b30e4065b
 - Push to GitHub
 - In the GitHub settings for that repo, you need to enable GitHub Pages and select the master branch.
 - A few minutes later (there’s always a slight lag for the first time page build) your reveal.js presentation is up at http://[yourusername].github.io/[reponame]
+
+## Sample Presentation
+
+https://github.com/hakimel/reveal.js/wiki/Example-Presentations
