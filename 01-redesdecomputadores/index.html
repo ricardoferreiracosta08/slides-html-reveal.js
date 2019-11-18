@@ -76,7 +76,7 @@
 					 <li>Conjunto de computadores autônomos interconectados por uma única tecnologia
                       <ul><li>A Internet é uma "rede de redes"!</li></ul>
                      </li>
-					 <li>Sistema de comunicação que visa a <span style="color: #7FFF00">interconexão</span> entre computadores, terminais e periféricos</li>
+					 <li>Sistema de comunicação que visa a <span style="color: blue">interconexão</span> entre computadores, terminais e periféricos</li>
                     </ul>
 				</section>
 				<section data-background="#dddddd">
@@ -84,9 +84,9 @@
 					<ul>
 					 <li>Aplicações comerciais
                       <ul>
-                      	<li>Compartilhamento de recursos físicos (<span style="color: #7FFF00">impressoras</span>) e informações (git)</li>
-                      	<li>Comunicação entre usuários (<span style="color: #7FFF00">chats corporativos</span>)</li>
-                      	<li>Comércio eletrônico (<span style="color: #7FFF00">e-commerce B2B</span>)</li>
+                      	<li>Compartilhamento de recursos físicos (<span style="color: blue">impressoras</span>) e informações (git)</li>
+                      	<li>Comunicação entre usuários (<span style="color: blue">chats corporativos</span>)</li>
+                      	<li>Comércio eletrônico (<span style="color: blue">e-commerce B2B</span>)</li>
                       </ul>
                      </li>
                     </ul>
@@ -96,11 +96,11 @@
 					<ul>
 					 <li>Aplicações Domésticas
                       <ul>
-                      	<li>Acessso a informações remotas (<span style="color: #7FFF00">WWW</span>)</li>
-                      	<li>Comunicação entre usuários (<span style="color: #7FFF00">IMs</span></li>
+                      	<li>Acessso a informações remotas (<span style="color: blue">WWW</span>)</li>
+                      	<li>Comunicação entre usuários (<span style="color: blue">IMs</span></li>
                       	<!-- B2C - Vendedor para consumer -->
                       	<!-- C2C - Consumer para consumer (sebo online) -->
-                      	<li>Comércio eletrônico (<span style="color: #7FFF00">e-commerce B2C e C2C</span>)</li>
+                      	<li>Comércio eletrônico (<span style="color: blue">e-commerce B2C e C2C</span>)</li>
                       	<li>Entretenimento</li>
                       </ul>
                      </li>
@@ -212,7 +212,7 @@
 								<td>Continente</td>
 								<td>Rede Geograficamente Distruída (WAN)</td>
 							</tr>
-							<tr style="color: gray">
+							<tr>
 								<td>10.000k</td>
 								<td>Planeta</td>
 								<td>Internet</td>
@@ -245,20 +245,51 @@
 				</section>
 				<section>
 					<h2>Malha</h2>
-					<blockquote>Os nós da rede comunicam-se uns com os outros, como se estivessem entrelaçados, permitindo a existência de vários caminhos pelos quais as informações possam trafegar de uma máquina à outra.</blockquote>
-				</section>
-				<section>
-					<h2>Malha</h2>
 					<ul>
 					 <li>Em WANs, principalmente</li>
 					 <li>Em LANs, não, em geral
 					 	<ul>
-					 		<li><span style="color: #7FFF00">Alto custo</span> - complexidade da decisão de por onde enviar a mensagem</li>
-					 		<li><span style="color: #7FFF00">Difícil de gerenciar</span> - (N x (N – 1)) / 2</li>
+					 		<li><span style="color: #7FFF00">Difícil de gerenciar</span> - conexões (N x (N – 1)) / 2</li>
 					 	</ul>
 					 </li>
 					 <li><u>Tipos:</u> Malha <span style="color: #7FFF00">totalmente</span> conectada ou Malha <span style="color: #7FFF00">parcialmente</span> conectada </li>
                     </ul>
+				</section>
+				<section>
+					<h2>Malha totalmente conectada</h2>
+					<blockquote>Cada estação é conectada a todas as outras estações</blockquote>
+					<img src="img/02.jpg" />
+					<ul>
+						<li><span style="color: #7FFF00">Vantagem</span>: sem necessidade de roteamento</li>
+						<li><span style="color: #7FFF00">Desvantagem</span>: grande quantidade de conexões</li>
+					</ul>
+					<!-- 
+					    – Vantagens
+							• Não há compartilhamento do meio físico
+							• Não há necessidade de decisões de por onde encaminhar a
+							mensagem (roteamento)
+						– Desvantagem
+							• Grande quantidade de ligações
+							– Custo
+					-->
+				</section>
+				<section>
+					<h2>Malha parcialmente conectada</h2>
+					<blockquote>Cada estação pode ser conectada diretamente a um número variável de estações</blockquote>
+					<img src="img/03.jpg" />
+					<ul>
+						<li><span style="color: #7FFF00">Vantagem</span>: arranjo de acordo com o tráfego (escolher melhor rota)</li>
+						<li><span style="color: #7FFF00">Desvantagem</span>: necessita de decisão de encaminhamento</li>
+					</ul>
+					<!-- 
+					    – Vantagem
+							• Arranjo de interconexões pode ser feito de acordo com o
+							tráfego
+							• Pode escolher por onde enviar a mensagem
+							  – Para evitar congestionamento
+						– Desvantagem
+							• Necessita de decisão de encaminhamento
+					-->
 				</section>
 			<!-- END SLIDES HERE -->
 			</div>
