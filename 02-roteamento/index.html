@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- change theme here -->
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+            <!-- SLIDES HERE -->
+				<section>
+                    <h2>Redes de Computadores</h2>
+                     <p>Professor Ricardo Ferreira - <a href="https://ricardoferreira.site" target="_blank">https://ricardoferreira.site</a></p>
+                     <p>
+                      <small>Especialista em Redes Locais e Metropolitanas (UEMA)</small>
+                      <small>Bacharel em Ciência da Computação (UFMA)</small>
+                    </p>
+				</section>
+				<section>
+					<h2>Roteiro</h2>
+                        <ol>
+                         <li>Conceitos de Roteamento</li>
+                         <li>Definições e uso das Redes de Computadores</li>
+					     <li>Classificação de Redes de computadores</li>
+					     <li>Arquitetura de Redes (Software de Redes)</li>
+					     <li>Modelo de Referência</li>
+					     <!--<li>Exemplos de Redes</li>
+					     <li>Unidades de medida</li>-->
+                        </ol>
+				</section>
+				<section>
+					<h2>Objetivos</h2>
+                        <ul>
+                         <li>Descrever as principais funções e recursos de um roteador.</li>
+					     <li>como um roteador cria uma tabela de roteamento para redes diretamente conectadas.</li>
+					     <li>Explique como um roteador cria uma tabela de roteamento usando rotas estáticas.</li>
+						 <li>Explique como um roteador cria uma tabela de roteamento usando um protocolo de roteamento dinâmico.</li>			
+                        </ul>
+                        <!--
+-->
+				</section>
+				<section>
+					<h2>Roteador</h2>
+					<ul>
+						<li>Elemento responsável por:
+							<ul>
+								<li><span style="color: #7FFF00">Determinar o caminho</span> entre um par origem-destino</li>
+								<li>Interconectar redes <span style="color: #7FFF00">distintas</span></li>
+								<li><span style="color: #7FFF00">Encaminhar</span> pacotes (Encaminhamento x Roteamento)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Encaminhamento x Roteamento</h2>
+					<ul>
+						<li>Encaminhamento (ou repasse ou <span style="color: #7FFF00">forwarding</span>)
+							<ul>
+								<li>“Mover” pacotes de uma entrada do roteador para a saída apropriada</li>
+								<li><span style="color: #7FFF00">Função do protocolo IP</span></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>Roteamento (<span style="color: #7FFF00">routing</span>))
+							<ul>
+								<li>Determinar a rota a ser seguida pelos pacotes da fonte até o destino</li>
+								<li><span style="color: #7FFF00">Função dos protocolos de roteamento</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Encaminhamento x Roteamento</h2>
+					<img src="img/01.jpg" />
+				</section>
+				<section>
+					<h2>Pacote ao chegar a um roteador:</h2>
+					<ul>
+						<li> Tem seu endereço de destino analisado (<span style="color: #7FFF00">best-prefix match</span>)
+							<ul>
+								<li>Se o <span style="color: #7FFF00">endereço for igual</span> ao de uma das interfaces do roteador
+									<ul><li>Pacote é enviado para camada de transporte</li></ul>
+								</li>
+							</ul>
+							<ul>
+								<li><span style="color: #7FFF00">Caso contrário</span>
+									<ul><li> Pacote é <span style="color: #7FFF00">encaminhado</span> a outro roteador pela interface mais indicada</li></ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+				
+				<section>
+					<h2>Próxima aula</h2>
+					<ul>
+					 <li>Detalhamento de cada camada do Modelo TCP/IP e principais protocolos/serviços</li>
+					 <li>Transferência de dados: Comutação de circuitos x Comutação de pacotes</li>
+					 <li>Métricas: avaliação do desempenho de uma rede (Jitter, Throughput, atraso de propagação)</li>
+                    </ul>
+				</section>
+
+				<!-- REFERENCIAS -->
+				<section>
+					<h2>Referências</h2>
+					<ul>
+						 <li>Capítulo 1 e 2 do Livro “Computer Networks”, Andrew S. Tanenbaum e David J, Wetherall, 5a. Edição, Editora Pearson, 2011</li>
+						 <li>Capítulo 1 do Livro “Computer Networking: A Top Down Approach”, 5a. Ed., Jim Kurose and Keith Ross, Editora Pearson, 2010</li>
+						 <li>Notas de aula do Prof. Luís Henrique Maciel Kosmalski Costa - disponível em <a href="http://www.gta.ufrj.br/ensino/eel878" target="_blank">http://www.gta.ufrj.br/ensino/eel878</a></li>
+						 <li>Notas de aula do curso Netcad da Cisco 5.0 - 2014</li>
+                    </ul>
+				</section>
+			<!-- END SLIDES HERE -->
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
