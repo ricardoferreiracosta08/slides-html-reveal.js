@@ -38,11 +38,9 @@
 				<section>
 					<h2>Roteiro</h2>
                         <ol>
-                         <li>Conceitos de Roteamento</li>
-                         <li>Definições e uso das Redes de Computadores</li>
-					     <li>Classificação de Redes de computadores</li>
-					     <li>Arquitetura de Redes (Software de Redes)</li>
-					     <li>Modelo de Referência</li>
+                         <li>Camada de rede</li>
+                         <li>Circuitos Virtuais</li>
+                         <li>Roteamento</li>
 					     <!--<li>Exemplos de Redes</li>
 					     <li>Unidades de medida</li>-->
                         </ol>
@@ -50,14 +48,149 @@
 				<section>
 					<h2>Objetivos</h2>
                         <ul>
-                         <li>Descrever as principais funções e recursos de um roteador.</li>
-					     <li>como um roteador cria uma tabela de roteamento para redes diretamente conectadas.</li>
-					     <li>Explique como um roteador cria uma tabela de roteamento usando rotas estáticas.</li>
-						 <li>Explique como um roteador cria uma tabela de roteamento usando um protocolo de roteamento dinâmico.</li>			
+                        	<li>Entender princípios dos serviços da camada de rede</li>
+                        	<li>Roteamento
+	                        	<ul>
+		                         <li>Descrever as principais funções e recursos de um roteador.</li>
+							     <li>como um roteador cria uma tabela de roteamento para redes diretamente conectadas.</li>
+							     <li>Explique como um roteador cria uma tabela de roteamento usando rotas estáticas.</li>
+								 <li>Explique como um roteador cria uma tabela de roteamento usando um protocolo de roteamento dinâmico.</li>
+								</ul>
+							</li>			
                         </ul>
                         <!--
 -->
 				</section>
+
+				<!-- 1 -->
+				<section>
+					<h2>Camada de Rede</h2>
+					<img src="img/03.jpg" />
+				</section>
+				<section>
+					<h2>Camada de Rede</h2>
+					<ul>
+						<li>Transporta segmentos do hospedeiro transmissor para o receptor
+							<ul>
+								<li>No <span style="color: #7FFF00">lado transmissor</span>, encapsula os segmentos em datagramas</li>
+								<li>No <span style="color: #7FFF00">lado receptor</span>, entrega os segmentos à camada de transporte</li>
+							</ul>
+						</li>
+						<li>Protocolos da camada de rede
+							<ul>
+								<li>Executados nos <span style="color: #7FFF00">sistemas finais</span> e nos <span style="color: #7FFF00">roteadores</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Camada de Rede</h2>
+					<img src="img/04.jpg" />
+				</section>
+				<section>
+					<h2>Camada de Rede</h2>
+					<img src="img/05.jpg" />
+				</section>
+				<section>
+					<h2>Camada de Rede</h2>
+					<img src="img/06.jpg" />
+				</section>
+				<section>
+					<h2>Camada de Rede</h2>
+					<img src="img/07.jpg" />
+				</section>
+				<section>
+					<h2>Camada de Rede</h2>
+					<img src="img/08.jpg" />
+				</section>
+				<section>
+					<h2>Modelo de serviço</h2>
+					<blockquote>Quais maneiras para garantir o <span style="color: #7FFF00">“canal” de transporte</span> de datagramas do transmissor ao receptor?</blockquote>
+				</section>
+				<section>
+					<h2>Modelo de serviço</h2>
+					<ul>
+						<li>Definem as características do <span style="color: #7FFF00">transporte de pacotes fim-a-fim</span> entre transmissor e receptor
+							<ul><li>Cada arquitetura de redes define a sua (ATM, Internet, etc)</li></ul>
+						</li>
+						<li>Para <span style="color: #7FFF00">pacotes individuais</span>:
+							<ul>
+							<li>Entrega garantida
+								<ul><li><span style="color: #7FFF00">P/ex: </span>Pacote irá chegar ao destino “mais cedo ou mais tarde”</li></ul>
+							</li>
+							<li>Entrega garantida com atraso limitado
+								<ul><li><span style="color: #7FFF00">P/ex: </span> Pacote irá chegar com atraso menor que 100 ms</li></ul>
+							</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Modelo de serviço</h2>
+					<ul>
+						<li>Para <span style="color: #7FFF00">fluxos de pacotes</span>:
+							<ul>
+								<li><span style="color: #7FFF00">P/ex: </span>Entrega ordenada de pacotes</li>
+								<li><span style="color: #7FFF00">P/ex: </span>Largura de banda mínima garantida</li>
+								<li><span style="color: #7FFF00">P/ex: </span>Serviços de segurança
+									<ul><li>Uso de chave secreta de sessão - cifragem do conteúdo de todos os pacotes enviados para o destinatário</li></ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Na Internet</h2>
+					<ul>
+						<li><span style="color: #7FFF00">Apenas um protocolo</span>: IP</li>
+						<li><span style="color: #7FFF00">Apenas um serviço oferecido</span>: Melhor esforço ("best-effort")</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Melhor esforço ("Best-effort")</h2>
+					<ul>
+						<li>Roteadores se <span style="color: #7FFF00">esforçam ao máximo</span> para entregar os pacotes
+							<ul><li>Da melhor maneira possível e sem distinção</li></ul>
+						</li>
+						<li>Nós simples e de baixo custo – <span style="color: #7FFF00">sem estados na rede</span>
+							<ul>
+								<li>Encaminhamento de pacote <span style="color: #7FFF00">independente</span> um dos outros</li>
+								<li>Sem reserva de recursos, recuperação de erros, garantia de acesso</li>
+								<li><span style="color: #7FFF00">Atraso</span> dependente do tamanho da fila</li>
+								<li><span style="color: #7FFF00">Sem garantia</span> de entrega do pacote ao destino
+								 	<ul><li>Pacote é <span style="color: #7FFF00">descartado</span> no roteador se a fila estiver cheia</li></ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 2 -->
+				<section data-background="#dddddd">
+					<h2>Circuitos Virtuais</h2>
+					<blockquote>Emular uma rede de comutação de circuitos utilizando comutação de pacotes</blockquote>
+					<ul><li class="fragment">Caminho da origem ao destino “se comporta” como um circuito telefônico</li></ul>
+				</section>
+				<section data-background="#dddddd">
+					<h2>Circuitos Virtuais</h2>
+					<ul>
+						<li><span style="color: blue">Funcionamento:</span>
+							<ul>
+								<li class="fragment">Estabelecimento da conexão deve <span style="color: blue">preceder o envio de dados</span>
+									<ul><li>Liberação da conexão após os dados</li></ul>
+								</li>
+								<li class="fragment"> Cada pacote carrega a <span style="color: blue">identificação do circuito virtual (CV)</span>
+									<ul><li>Ao invés de endereços de origem e destino</li></ul>
+								</li>
+								<li class="fragment">Cada <span style="color: blue">roteador</span> no caminho origem-destino <span style="color: blue">mantém estado para cada conexão</span> que o atravessa
+									<ul><li>Cada conexão está associada a um CV</li></ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 3 -->
 				<section>
 					<h2>Roteador</h2>
 					<ul>
@@ -109,6 +242,10 @@
 							</ul>
 						</li>
 					</ul>
+				</section>
+				<section>
+					<h2>Encaminhamento porta de entrada x porta saída</h2>
+					<img src="img/02.jpg" />
 				</section>
 
 
