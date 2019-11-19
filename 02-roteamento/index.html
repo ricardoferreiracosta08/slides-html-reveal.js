@@ -39,7 +39,7 @@
 					<h2>Roteiro</h2>
                         <ol>
                          <li>Camada de rede</li>
-                         <li>Circuitos Virtuais</li>
+                         <li>Circuitos Virtuais x Rede de datagramas</li>
                          <li>Roteamento</li>
 					     <!--<li>Exemplos de Redes</li>
 					     <li>Unidades de medida</li>-->
@@ -72,13 +72,13 @@
 					<ul>
 						<li>Transporta segmentos do hospedeiro transmissor para o receptor
 							<ul>
-								<li>No <span style="color: #7FFF00">lado transmissor</span>, encapsula os segmentos em datagramas</li>
-								<li>No <span style="color: #7FFF00">lado receptor</span>, entrega os segmentos à camada de transporte</li>
+								<li class="fragment">No <span style="color: #7FFF00">lado transmissor</span>, encapsula os segmentos em datagramas</li>
+								<li class="fragment">No <span style="color: #7FFF00">lado receptor</span>, entrega os segmentos à camada de transporte</li>
 							</ul>
 						</li>
-						<li>Protocolos da camada de rede
+						<li class="fragment">Protocolos da camada de rede
 							<ul>
-								<li>Executados nos <span style="color: #7FFF00">sistemas finais</span> e nos <span style="color: #7FFF00">roteadores</span></li>
+								<li class="fragment">Executados nos <span style="color: #7FFF00">sistemas finais</span> e nos <span style="color: #7FFF00">roteadores</span></li>
 							</ul>
 						</li>
 					</ul>
@@ -113,12 +113,12 @@
 						<li>Definem as características do <span style="color: #7FFF00">transporte de pacotes fim-a-fim</span> entre transmissor e receptor
 							<ul><li>Cada arquitetura de redes define a sua (ATM, Internet, etc)</li></ul>
 						</li>
-						<li>Para <span style="color: #7FFF00">pacotes individuais</span>:
+						<li class="fragment">Para <span style="color: #7FFF00">pacotes individuais</span>:
 							<ul>
-							<li>Entrega garantida
+							<li class="fragment">Entrega garantida
 								<ul><li><span style="color: #7FFF00">P/ex: </span>Pacote irá chegar ao destino “mais cedo ou mais tarde”</li></ul>
 							</li>
-							<li>Entrega garantida com atraso limitado
+							<li class="fragment">Entrega garantida com atraso limitado
 								<ul><li><span style="color: #7FFF00">P/ex: </span> Pacote irá chegar com atraso menor que 100 ms</li></ul>
 							</li>
 							</ul>
@@ -130,9 +130,9 @@
 					<ul>
 						<li>Para <span style="color: #7FFF00">fluxos de pacotes</span>:
 							<ul>
-								<li><span style="color: #7FFF00">P/ex: </span>Entrega ordenada de pacotes</li>
-								<li><span style="color: #7FFF00">P/ex: </span>Largura de banda mínima garantida</li>
-								<li><span style="color: #7FFF00">P/ex: </span>Serviços de segurança
+								<li class="fragment"><span style="color: #7FFF00">P/ex: </span>Entrega ordenada de pacotes</li>
+								<li class="fragment"><span style="color: #7FFF00">P/ex: </span>Largura de banda mínima garantida</li>
+								<li class="fragment"><span style="color: #7FFF00">P/ex: </span>Serviços de segurança
 									<ul><li>Uso de chave secreta de sessão - cifragem do conteúdo de todos os pacotes enviados para o destinatário</li></ul>
 								</li>
 							</ul>
@@ -142,22 +142,20 @@
 				<section>
 					<h2>Na Internet</h2>
 					<ul>
-						<li><span style="color: #7FFF00">Apenas um protocolo</span>: IP</li>
-						<li><span style="color: #7FFF00">Apenas um serviço oferecido</span>: Melhor esforço ("best-effort")</li>
+						<li class="fragment"><span style="color: #7FFF00">Apenas um protocolo</span>: IP</li>
+						<li class="fragment"><span style="color: #7FFF00">Apenas um serviço oferecido</span>: Melhor esforço ("best-effort")</li>
 					</ul>
 				</section>
 				<section>
 					<h2>Melhor esforço ("Best-effort")</h2>
 					<ul>
-						<li>Roteadores se <span style="color: #7FFF00">esforçam ao máximo</span> para entregar os pacotes
-							<ul><li>Da melhor maneira possível e sem distinção</li></ul>
-						</li>
-						<li>Nós simples e de baixo custo – <span style="color: #7FFF00">sem estados na rede</span>
+						<li class="fragment">Roteadores se <span style="color: #7FFF00">esforçam ao máximo</span> para entregar os pacotes</li>
+						<li class="fragment">Nós simples e de baixo custo:
 							<ul>
-								<li>Encaminhamento de pacote <span style="color: #7FFF00">independente</span> um dos outros</li>
-								<li>Sem reserva de recursos, recuperação de erros, garantia de acesso</li>
-								<li><span style="color: #7FFF00">Atraso</span> dependente do tamanho da fila</li>
-								<li><span style="color: #7FFF00">Sem garantia</span> de entrega do pacote ao destino
+								<li class="fragment">Encaminhamento de pacote <span style="color: #7FFF00">independente</span> um dos outros</li>
+								<li class="fragment">Sem reserva de recursos, recuperação de erros, garantia de acesso</li>
+								<li class="fragment"><span style="color: #7FFF00">Atraso</span> dependente do tamanho da fila</li>
+								<li class="fragment"><span style="color: #7FFF00">Sem garantia</span> de entrega do pacote ao destino
 								 	<ul><li>Pacote é <span style="color: #7FFF00">descartado</span> no roteador se a fila estiver cheia</li></ul>
 								</li>
 							</ul>
@@ -167,11 +165,28 @@
 
 				<!-- 2 -->
 				<section data-background="#dddddd">
+					<h2>Circuitos Virtuais x Datagramas</h2>
+					<ul>
+						<li class="fragment">Camada rede pode oferecer serviços orientados ou não a conexão</li>
+						<li class="fragment"><span style="color: blue">Circuitos virtuais<span> - orientado a conexão
+							<ul>
+								<li>Usados em ATM, frame-relay, X.25</li>
+								<li>Não usados na Internet convencional</li>
+							</ul>
+						</li>
+						<li class="fragment"><span style="color: blue">Rede de datagramas</span> - Não orientado a conexão
+							<ul>
+								<li>Usados na Internet convencional</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section data-background="#dddddd">
 					<h2>Circuitos Virtuais</h2>
 					<blockquote>Emular uma rede de comutação de circuitos utilizando comutação de pacotes</blockquote>
 					<ul><li class="fragment">Caminho da origem ao destino “se comporta” como um circuito telefônico</li></ul>
 				</section>
-				<section data-background="#dddddd">
+				<!--<section data-background="#dddddd">
 					<h2>Circuitos Virtuais</h2>
 					<ul>
 						<li><span style="color: blue">Funcionamento:</span>
@@ -182,12 +197,54 @@
 								<li class="fragment"> Cada pacote carrega a <span style="color: blue">identificação do circuito virtual (CV)</span>
 									<ul><li>Ao invés de endereços de origem e destino</li></ul>
 								</li>
-								<li class="fragment">Cada <span style="color: blue">roteador</span> no caminho origem-destino <span style="color: blue">mantém estado para cada conexão</span> que o atravessa
+								<li class="fragment">Cada <span style="color: blue">roteador</span>, no caminho origem-destino, <span style="color: blue">mantém estado para cada conexão</span> que o atravessa
 									<ul><li>Cada conexão está associada a um CV</li></ul>
 								</li>
 							</ul>
 						</li>
 					</ul>
+				</section>
+				<section data-background="#dddddd">
+					<h2>Circuitos Virtuais</h2>
+					<ul>
+						<li><span style="color: blue"> Um CV consiste de:</span>
+							<ul>
+								<li class="fragment">Caminho da origem para o destino</li>
+								<li class="fragment"> Um número de CV para cada enlace ao longo do caminho</li>
+								<li class="fragment">Entradas nas <span style="color: blue">tabelas de encaminhamento</span> dos roteadores ao longo do caminho</li>
+							</ul>
+						</li>
+					</ul>
+				</section>--> 
+				<section data-background="#dddddd">
+					<h2>Circuitos Virtuais</h2>
+					<img src="img/10.jpg" />
+				</section>
+				<section data-background="#dddddd">
+					<h2>Circuitos Virtuais</h2>
+					<img src="img/09.jpg" />
+				</section>
+				<section data-background="#dddddd">
+					<h2>Rede de datagramas</h2>
+					<blockquote>Usam endereços de destino para rotearem os pacotes. Adoção da <span style="color: blue">comutação de pacotes</span></blockquote>
+					<ul><li class="fragment">Não existe estabelecimento de conexão</li></ul>
+				</section>
+				<section data-background="#dddddd">
+					<h2>Rede de datagramas</h2>
+					<ul>
+						<li class="fragment"> Roteadores não guardam estado sobre conexões</li>
+						<li class="fragment"> Pacotes são encaminhados
+							<ul>
+								<li> Com base no <span style="color: blue">endereço de destino</span></li>
+								<li> De acordo com o <span style="color: blue">modelo de melhor esforço</span> ("best-effort")</li>
+							</ul>	
+						</li>
+						<li class="fragment"> Dois pacotes entre o mesmo par origem-destino podem <span style="color: blue">seguir caminhos diferentes</span></li>
+					</ul>
+				</section>
+				<section data-background="#dddddd">
+					<h2>Rede de datagramas</h2>
+					<img src="img/11.jpg" />
 				</section>
 
 				<!-- 3 -->
@@ -196,9 +253,9 @@
 					<ul>
 						<li>Elemento responsável por:
 							<ul>
-								<li><span style="color: #7FFF00">Determinar o caminho</span> entre um par origem-destino</li>
-								<li>Interconectar redes <span style="color: #7FFF00">distintas</span></li>
-								<li><span style="color: #7FFF00">Encaminhar</span> pacotes (Encaminhamento x Roteamento)</li>
+								<li class="fragment"><span style="color: #7FFF00">Determinar o caminho</span> entre um par origem-destino</li>
+								<li class="fragment">Interconectar redes <span style="color: #7FFF00">distintas</span></li>
+								<li class="fragment"><span style="color: #7FFF00">Encaminhar</span> pacotes (Encaminhamento x Roteamento)</li>
 							</ul>
 						</li>
 					</ul>
@@ -208,16 +265,16 @@
 					<ul>
 						<li>Encaminhamento (ou repasse ou <span style="color: #7FFF00">forwarding</span>)
 							<ul>
-								<li>“Mover” pacotes de uma entrada do roteador para a saída apropriada</li>
-								<li><span style="color: #7FFF00">Função do protocolo IP</span></li>
+								<li class="fragment">“Mover” pacotes de uma entrada do roteador para a saída apropriada</li>
+								<li class="fragment"><span style="color: #7FFF00">Função do protocolo IP</span></li>
 							</ul>
 						</li>
 					</ul>
 					<ul>
 						<li>Roteamento (<span style="color: #7FFF00">routing</span>))
 							<ul>
-								<li>Determinar a rota a ser seguida pelos pacotes da fonte até o destino</li>
-								<li><span style="color: #7FFF00">Função dos protocolos de roteamento</span></li>
+								<li class="fragment">Determinar a rota a ser seguida pelos pacotes da fonte até o destino</li>
+								<li class="fragment"><span style="color: #7FFF00">Função dos protocolos de roteamento</span></li>
 							</ul>
 						</li>
 					</ul>
@@ -229,13 +286,13 @@
 				<section>
 					<h2>Pacote ao chegar a um roteador:</h2>
 					<ul>
-						<li> Tem seu endereço de destino analisado (<span style="color: #7FFF00">best-prefix match</span>)
-							<ul>
-								<li>Se o <span style="color: #7FFF00">endereço for igual</span> ao de uma das interfaces do roteador
+						<li>Tem seu endereço de destino analisado (<span style="color: #7FFF00">best-prefix match</span>)
+							<ul class="fragment">
+								<li >Se o <span style="color: #7FFF00">endereço for igual</span> ao de uma das interfaces do roteador
 									<ul><li>Pacote é enviado para camada de transporte</li></ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="fragment">
 								<li><span style="color: #7FFF00">Caso contrário</span>
 									<ul><li> Pacote é <span style="color: #7FFF00">encaminhado</span> a outro roteador pela interface mais indicada</li></ul>
 								</li>
