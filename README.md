@@ -4,6 +4,6 @@
 
 ### Aula 01 - Redes de Computadores 
 
-<a href="https://ricardoferreiracosta08.github.io/uema-engenhariadecomputacao/01-redesdecomputadores/" target="_blank">Slides</a>
+<a href="https://ricardoferreiracosta08.github.io/slides-html-reveal.js/01-redesdecomputadores/" target="_blank">Slides</a>
 
 
